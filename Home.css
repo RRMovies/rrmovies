@@ -1,0 +1,106 @@
+.content{
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .written{
+  margin: 15px;
+}
+.content .written h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+.content .written p{
+  font-weight: 300;
+  max-width: 560px;
+  min-width: 300px;
+  text-align: justify;
+}
+.content .imgBx{
+  margin: 15px auto;
+  display: flex;
+  height: 300px;
+  width: 300px;
+}
+.content .imgBx img{
+  height: 300px;
+  width: 300px;
+}
+.content.Frame .Ifrm .iframe{
+  height: 54vw;
+  width: 96vw;
+  background: #222a;
+  margin: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.content.Frame .Ifrm .iframe h3{
+  text-align: center;
+}
+.content.Frame{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content.Frame .Ifrm{
+  flex-wrap: wrap;
+   display: flex;
+   flex-direction: column;
+  margin: 0px;
+}
+
+.content.Blog{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  grid-gap: 5.55vw;
+}
+.content.Blog .imgBx{
+  display: flex;
+  height: auto;
+  width: auto;
+} 
+.content.Blog .imgBx a img{
+  height: 200px;
+  width: auto;
+}
+
+@media (min-width:560px) {
+ .content{
+   flex-wrap: nowrap; 
+ }
+ .content.Frame{
+   flex-wrap: wrap;
+   display: flex;
+   flex-direction: column;
+ }
+.content.Frame .Ifrm{
+  flex-wrap: nowrap;
+  display: inline-flex;
+  flex-direction: row;
+    margin: 1vw;
+}
+.content.Frame .Ifrm .iframe{
+  max-width: 46vw;
+  max-height: 26vw;
+  margin: 0 1vw;
+}
+.content.Frame .Ifrm .iframe iframe {
+  min-height: 80%;
+}
+.content .imgBx{
+  margin: 15px auto;
+  display: block;
+  height: 300px;
+  width: 300px;
+}
+.content .imgBx img{
+  display: block;
+  height: auto;
+  width: 300px;
+}
+}
