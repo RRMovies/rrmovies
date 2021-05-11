@@ -10,6 +10,8 @@ window.onload = function(){
 const headerImg = document.getElementsByTagName("header")[0].getElementsByTagName("img")[0];
 const toggleBtn = document.getElementsByClassName("toggleBtn")[0];
 const nav = document.getElementsByTagName("nav")[0];
+const navA = nav.querySelectorAll("a")[4];
+
 if (window.innerWidth < 559) {
   toggleBtn.style.display = "block";
   nav.setAttribute("id", "hide");
@@ -33,7 +35,7 @@ function toggleMobile(){
 var adjnav = nav.getAttribute("id");
 toggleBtn.addEventListener("click", toggle);
 
-nav.addEventListener("click", toggle);
+navA.addEventListener("click", toggle);
 
 function toggle() {
   //if()
