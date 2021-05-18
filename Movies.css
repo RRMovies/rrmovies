@@ -1,0 +1,134 @@
+.content{
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .written{
+  margin: 15px;
+}
+.content .written h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+.content .written p{
+  font-weight: 300;
+  max-width: 560px;
+  min-width: 300px;
+  text-align: justify;
+}
+.content .ifrme{
+  width: 96vw;
+  height: 54vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Listbody{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  height: 0;
+  position: fixed;
+  z-index: 100;
+  margin: 0;
+  backdrop-filter: blur(0);
+  width: 100vw;
+  transform: translateY(-45px);
+}
+.Listbody.active{
+  height: 100vh;
+  backdrop-filter: blur(2vw);
+  display: flex;
+}
+.content.list{
+  justify-content: left;
+}
+.Listbody ul{
+  background: #D6AA00;
+  width: 96vw;
+  transition: 1.5s;
+  text-align: center;
+  display: grid;
+  height: auto;
+  border-radius: 2vw;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.Listbody ul li{
+  margin: 5px;
+  background: #00669F;
+  border-radius: 5px;
+  text-align: center;
+}
+.content.list #list{
+  font-size: 30px;
+  font-weight: 700;
+  padding: 1vw;
+  margin: 2vw;
+  font-family: 'hel',fantasy;
+  color: #fff;
+  background: #AF8600dd;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 1000;
+  bottom: 3vw;
+}
+.content.movie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: baseline;
+}
+.content.movie .imgContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: #A17F00C9;
+  text-align: center;
+  max-width: 200px;
+  border-radius: 0 0 5px 5px;
+} 
+.content.movie h1{
+  text-align: center;
+}
+.content.movie .imgContainer img{
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+#contact{
+  margin: 15vw auto;
+}
+#contact h6{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 1vw;
+  padding: 10vw;
+}
+#contact h6 a{
+  padding: 5vw;
+  background: #005519;
+  color: #fff;
+  border: groove #FFC400 2px;
+  border-radius: 5vw;
+}
+@media (min-width:560px){
+ .content{
+   flex-direction: row;
+     display: flex;
+     flex-wrap: nowrap;
+     width: 100vw;
+     justify-content: space-between;
+ }
+  .content .ifrme{
+    max-width: 480px;
+    max-height: 270px;
+  }
+}

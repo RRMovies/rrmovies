@@ -10,6 +10,10 @@
   position: relative;
   font-family: 'hel', sans-serif;
   letter-spacing: 1px;
+  scrollbar-width: 0;
+}
+*::-webkit-scrollbar{
+  display: none;
 }
 @font-face{
   font-family: "hel";
@@ -76,10 +80,12 @@ nav ul{
   align-items: center;
   justify-content: center;
   padding: 5px;
+  overflow: hidden;
 }
 nav ul li{
   display: inline-flex;
   background: transparent;
+  overflow: hidden;
 }
 nav ul li a{
   text-decoration: none;
@@ -101,12 +107,13 @@ nav.active ul li a{
   transition: 1s;
 }
 #hide{
-  height: 0;
+  height: 0vh;
 }
 #show{
   position: fixed;
   width: 100%;
   z-index: 1;
+  transition: 1s;
 }
 #show ul{
   height: 100vh;
@@ -178,4 +185,7 @@ header img{
   font-weight: 300;
   padding: 10px;
   color: #00C6FF;
+}
+a,iframe,img{
+  overflow: hidden;
 }
