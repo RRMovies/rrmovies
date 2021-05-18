@@ -1,9 +1,4 @@
-- 👋 Hi, I’m Maruf Hassan owner of @RRMovies
-- 👀 I’m interested in programming
-- 🌱 I’m currently learning PHP and mySql
-- 💞️ I’m looking to collaborate on Github.
-
-<!---
-RRMovies/RRMovies is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<h1>R&R Movies</h1>
+R&R Movies is a trailer based YouTube channel. And this page is the official website of R&R Movies<br />
+Web address : <a href="https://rrmovies.github.io/rrmovies/" target="_blank">https://rrmovies.github.io/rrmovies/</a><br />
+&copy; All rights received by r&r movies,2020</p>
