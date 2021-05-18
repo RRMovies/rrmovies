@@ -19,30 +19,6 @@
   window.onload = function(){
    c = document.getElementById('Game');
    ca = c.getContext('2d');
-document.getElementById('Nightmode').onclick = function() {
-  if (this.innerHTML === "Night") {
-    this.innerHTML = "&#9728;";
-    document.body.style.backgroundColor = "#ffffffcc";
-    document.body.style.color = "#000000";
-    this.setAttribute("class", "Nightmode");
-  }
-  else {
-    this.innerHTML = "Night";
-    document.body.style.backgroundColor = "#202020";
-    document.body.style.color = "#ffffffdd";
-    this.setAttribute("class", "Daymode");
-  }
-}
-   document.getElementById('muteaudio').onclick =function() {
-document.getElementById('tennisMusic').pause();
-document.getElementById('playaudio').style.display = "inline";
-document.getElementById('muteaudio').style.display = "none";
-   }
- document.getElementById('playaudio').onclick = function() {
- document.getElementById('muteaudio').style.display = "inline";
- document.getElementById('playaudio').style.display = "none";
-     document.getElementById('tennisMusic').play();
-   }
 function ballrst(){
   u = -(u);
   t = c.height/2;
@@ -51,10 +27,6 @@ function ballrst(){
   document.getElementById('start').onclick = function (){
  document.getElementById('start').style.display = "none";
  c.style.display = "block";
-var music = document.getElementById('tennisMusic');
-      music.play();
-      music.loop = true;
-document.getElementById('muteaudio').style.display = "inline";
   document.getElementById('leftbtn').onclick = function() {btnl()};
   document.getElementById('rgtbtn').onclick = function() {btnr()};
   var stop =setInterval(ty,15);
