@@ -4,105 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Table Tennis</title>
+    <title>Canvas</title>
 </head>
-<script src="js/Tennis.js">
-</script>
-<script src="js/Drop Down.js"></script>
-<link rel="stylesheet" href="style/Drop-down.css" title="" type="" />
-<link rel="stylesheet" href="style.css" type="text/css" media="all" />
-<link rel="stylesheet" href="style/style2.css" type="text/css" media="all" />
 <body>
-  <style>
-    canvas{
-      display: none;
-    }
-  </style>
-  <h2>Table Tennis</h2>
-  <h3 id="scrshw"></h3>
-<canvas id="Game" height="360" width="350%"></canvas><br>
-<div class="btn2" style="margin-top: 0;">
-  <button id="reset">Score</button>
-  <button id="start">Start</button>
-  <button id="muteaudio"><big style="font-size: 20px;">	&#128263;</big>Mute</button>
-  <button id="playaudio"><big style="font-size: 20px;">	&#9835;</big>play</button>
-<div class="Restart">
-    <button onclick="drpdwn()" class="dropbtn">Options</button>
-    <div id="Mdrw" class="dropdown-content">
- <a href="menubar.html">Tools</a>
-      <a href="Tennis.html">Restart</a>
-    </div>
-  </div>
-</div>
+<canvas id="Game" height="400" width="350%"></canvas><br>
 <div class="btn">
 <button id="leftbtn">First</button>
+<button id="reset">Reset</button>
 <button id="rgtbtn">Second </button>
 </div>
-<div>
-  <audio id="tennisMusic">
-    <source src="music/Alan_Walker_-_Force_[NCS_Release](128k).mp3" type="audio/mp3">
-  </audio>
-</div>
-<div class="guide">
-  <h3>How to play</h3>
-  <ol>
-    <li><b>First</b> button moves the <left>Left</left> paddle down and moves the <right>right</right> paddle up.</li>
-    <li>The <b>Second</b> button is the vice versa of the <b>First</b> button.</li>
-    <imp><li>Your target is 200. Just do this in <b>Total score</b>.Then you will win.</li></imp><a href="guide.html#test">...more here.</a><br>
-    <i>This Game is created by Maruf Hasan</i>
-  </ol>
-</div>
-     <footer>
- <h4 class="Nightmode" id="Nightmode">&#9728;</h4></footer>
+<script src="tennis.js"></script>
 </body>
-<style type="text/css" media="all">
-left{
-  color: #1CFF00;
-  background: #098908;
-  text-transform: uppercase;
-  border-radius: 5%;
-  padding: 0.1%;
-}
-right{
-  color: #FFC900;
-  background: #aa9000;
-  text-transform: uppercase;
-  border-radius: 15%;
-  padding: 0.1%;
-}
-body{
-  background: none;
-}
-#muteaudio,#playaudio{
-  display : none;
-}
-  .btn,.btn2{
-   height: 50px;
-   margin: 10px 0 10px 0;
-   width: 100%;
- }
- #start,#muteaudio,#playaudio{
-   margin: 0 14.5% 0 14.5%;
- }
-#leftbtn,#rgtbtn,#reset,.Restart,#start,#muteaudio,#playaudio{
-   height: 50px;
-   width: 80px;
-   border-radius :5px;
- }
- #reset{
-   float: right;
- }
-.btn #rgtbtn{
-  float: right;
-}
-.Restart{
-  float: left;
-}
-.restart{
-  text-align: center;
-  text-decoration: none;
-  color: #000;
-  text-shadow: none;
-}
-</style>
 </html>
