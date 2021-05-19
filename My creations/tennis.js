@@ -16,6 +16,7 @@
   function btnr(){
     pdly = pdly-((pdlh/4)*3);
   }
+alert("script loaded");
   window.onload = aa;
   function aa(){
   var c = document.getElementById('Game');
