@@ -7,49 +7,30 @@
     <title>Canvas</title>
 </head>
 <body>
-<canvas id="Game" height="400" width="350%"></canvas><br>
+<canvas id="Game" height="400" width="98vw"></canvas><br>
 <div class="btn">
 <button id="leftbtn">First</button>
-<button id="start">Start</button>
 <button id="reset">Reset</button>
 <button id="rgtbtn">Second </button>
 </div>
-<script src="tennis.js"></script>
+</body>
 <style>
-body{
-  background: none;
+canvas{
+margin: 1vw;
 }
-#muteaudio,#playaudio{
-  display : none;
-}
-  .btn,.btn2{
-   height: 50px;
-   margin: 10px 0 10px 0;
+.btn{
+   height: auto;
    width: 100%;
  }
- #start,#muteaudio,#playaudio{
-   margin: 0 14.5% 0 14.5%;
- }
-#leftbtn,#rgtbtn,#reset,.Restart,#start,#muteaudio,#playaudio{
+.btn #leftbtn,.btn #rgtbtn,#reset{
    height: 50px;
    width: 80px;
-   border-radius :5px;
- }
- #reset{
-   float: right;
  }
 .btn #rgtbtn{
   float: right;
 }
-.Restart{
-  float: left;
-}
-.restart{
-  text-align: center;
-  text-decoration: none;
-  color: #000;
-  text-shadow: none;
+.btn #reset{
+    margin-left:15%;
 }
 </style>
-</body>
 </html>
