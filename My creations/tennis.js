@@ -19,6 +19,7 @@
   window.onload = function(){
    c = document.getElementById('Game');
    ca = c.getContext('2d');
+
 function ballrst(){
   u = -(u);
   t = c.height/2;
