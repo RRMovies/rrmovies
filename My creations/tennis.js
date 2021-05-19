@@ -3,7 +3,7 @@
   var t = 250;
   var s = 2;
   var u = 2;
-  var frps = 100;
+  var frps = 10;
   var ballh = 10;
   var ballw = 10;
   var pdly = 250;
@@ -16,26 +16,24 @@
   function btnr(){
     pdly = pdly-((pdlh/4)*3);
   }
-  window.onload = function(){
-   c = document.getElementById('Game');
-   ca = c.getContext('2d');
-
-function ballrst(){
-  u = -(u);
-  t = c.height/2;
-  frps =c.width/2;
-}
-  document.getElementById('start').onclick = function (){
- document.getElementById('start').style.display = "none";
- c.style.display = "block";
+  window.onload = aa;
+  function aa(){
+  c = document.getElementById('Game');
+  ca=c.getContext('2d');
+ var stop = setInterval(ty,10);
   document.getElementById('leftbtn').onclick = function() {btnl()};
   document.getElementById('rgtbtn').onclick = function() {btnr()};
-  var stop =setInterval(ty,15);
+
+  function ballrst(){
+    u = -u;
+    t = c.height/2;
+    frps = c.width/2;
+  }
   function ty(){
   document.getElementById('reset').onclick = function() {
     clearInterval(stop);
-    if(ttlscr>199){
-    alert("Hurray!!!You win!");
+    if(ttlscr>499){
+    alert("Hurry!!!You win!");
     alert("Your score : "+ttlscr);
     }
    else if(ttlscr<0){
@@ -47,8 +45,6 @@ function ballrst(){
       alert("Your score:"+ttlscr);
     }
   }
- var anttlscr = score1 + score2;
-  document.getElementById('scrshw').innerHTML = 'your score : ' + anttlscr;
      t = t+s;
      if(t>(c.height-(ballw))){
        s = -(s+0);
@@ -61,31 +57,31 @@ else{
 }
 frps = frps+u;
 if (frps > (c.width-(ballw))){
-    if (t > (c.height-pdly-10) && t < pdlh + (c.height-pdly+10)) {
-      u = -u;
+    if (t > (c.height-pdly-2) && t < pdlh + (c.height-pdly+2)) {
+      u = -(u+0.1);
       score2 += 5;
     }
     else {
       ballrst();
-      score2 -= 10;
+      score2 -= 30;
     }
 }
 if (frps < 0) {
    if (t > pdly-2 && t<(pdlh+pdly+2)){
-     u = -u;
+     u = -(u+0.1);
      score1 += 5;
    }
    else {
      ballrst();
-     score1 -= 10;
+     score1 -= 30;
    }
 }
 else {
  u = u
 }
-var ttlscr = score1 + score2;
+var ttlscr = score1 + score2 ;
   main(0, 0, c.width, c.height, '#000030');
-  main(c.width / 2, 0, 1, c.height, '#ffffff');
+  main(c.width/2,0,1,c.height,'#ffffff');
   ca.fillStyle = '#afdafd';
   ca.beginPath();
   ca.arc(frps,t,7,0,Math.PI*2,true);
@@ -95,6 +91,9 @@ var ttlscr = score1 + score2;
   ca.fillStyle = '#1CFF00';
   ca.fillText("Board 1 :",(c.width/4)-45,c.height/2);
   ca.fillText(score1,c.width/4,c.height/2);
+  ca.fillStyle = '#eeeeff';
+  ca.fillText(ttlscr,c.width/2 + 10,100);
+  ca.fillText("Total score   : ",c.width/2-53,100);
   ca.fillStyle = '#FFC900';
   ca.fillText("Board 2 :",(c.width-c.width/4)-25,c.height/2);
   ca.fillText(score2,(c.width-c.width/4)+20,c.height/2);
@@ -103,5 +102,4 @@ var ttlscr = score1 + score2;
       ca.fillStyle = color;
       ca.fillRect(x,y,width,height);
     }
-}
 }
