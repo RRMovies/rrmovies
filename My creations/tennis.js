@@ -18,8 +18,8 @@
   }
   window.onload = aa;
   function aa(){
-  c = document.getElementById('Game');
-  ca=c.getContext('2d');
+  var c = document.getElementById('Game');
+  var ca = c.getContext('2d');
 alert("Hi i am ready");
  var stop = setInterval(ty,10);
   document.getElementById('leftbtn').onclick = function() {btnl()};
