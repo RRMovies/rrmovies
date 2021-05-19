@@ -20,6 +20,7 @@
   function aa(){
   c = document.getElementById('Game');
   ca=c.getContext('2d');
+alert("Hi i am ready");
  var stop = setInterval(ty,10);
   document.getElementById('leftbtn').onclick = function() {btnl()};
   document.getElementById('rgtbtn').onclick = function() {btnr()};
