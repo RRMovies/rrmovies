@@ -16,13 +16,11 @@
   function btnr(){
     pdly = pdly-((pdlh/4)*3);
   }
-alert("script loaded");
   window.onload = aa;
   function aa(){
   var c = document.getElementById('Game');
   var ca = c.getContext('2d');
-alert("Hi i am ready");
- var stop = setInterval(ty,10);
+ var stop = setInterval(ty,50);
   document.getElementById('leftbtn').onclick = function() {btnl()};
   document.getElementById('rgtbtn').onclick = function() {btnr()};
 
@@ -59,7 +57,7 @@ else{
 }
 frps = frps+u;
 if (frps > (c.width-(ballw))){
-    if (t > (c.height-pdly-2) && t < pdlh + (c.height-pdly+2)) {
+    if (t > (c.height-pdly-5) && t < pdlh + (c.height-pdly+5)) {
       u = -(u+0.1);
       score2 += 5;
     }
@@ -69,7 +67,7 @@ if (frps > (c.width-(ballw))){
     }
 }
 if (frps < 0) {
-   if (t > pdly-2 && t<(pdlh+pdly+2)){
+   if (t > pdly-5 && t<(pdlh+pdly+5)){
      u = -(u+0.1);
      score1 += 5;
    }
