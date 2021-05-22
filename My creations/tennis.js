@@ -17,8 +17,9 @@
     pdly = pdly-((pdlh/4)*3);
   }
   window.onload = function(){
-   c = document.getElementById('Game');
-   ca = c.getContext('2d');
+  var c = document.getElementById('Game');
+  var ca = c.getContext('2d');
+c.width = window.innerwidth;
 function ballrst(){
   u = -(u);
   t = c.height/2;
