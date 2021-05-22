@@ -27,6 +27,7 @@ function ballrst(){
 }
   document.getElementById('start').onclick = function (){
  document.getElementById('start').style.display = "none";
+  document.getElementById('reset').style.display = "block";
  c.style.display = "block";
   document.getElementById('leftbtn').onclick = function() {btnl()};
   document.getElementById('rgtbtn').onclick = function() {btnr()};
