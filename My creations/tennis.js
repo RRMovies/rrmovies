@@ -19,7 +19,7 @@
   window.onload = function(){
   var c = document.getElementById('Game');
   var ca = c.getContext('2d');
-c.width = window.innerwidth;
+  c.style.minWidth = "98vw";
 function ballrst(){
   u = -(u);
   t = c.height/2;
