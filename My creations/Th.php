@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
 ?>
 
 <body>
-  <form action="../My creations/Th.php" method="post" accept-charset="utf-8">
+  <form action=".../Th.php" method="post" accept-charset="utf-8">
     <label for="Name">Name</label><br />
     <input class="input" type="text" name="Name" value="" required/><br />
     <label for="Age">Age</label><br />
