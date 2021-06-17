@@ -238,7 +238,7 @@
   </div></a>
 </div>
 
-
+<link rel="stylesheet" href="Form.css"/>
 <div class="content">
   <div class="written">
     <h1>Others</h1>
@@ -271,11 +271,69 @@
     <p>Dabangg 2</p>
   </div></a>
 </div>
-
 <!--body-->
-  <div id="contact">
-    <h6><a href="mailto:r.rmovies01@gmail.com">Movie Request</a></h6>
-</div>
+  <div class="frm" id="contact">
+<section>
+  <h1>Movie request</h1>
+    </section>
+    <div class="Form">
+      <form action="https://formspree.io/f/myyljyrg" method="POST" id="my-form">
+        <div class="form-group">
+          <label for="firstName"> First Name</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="latsName">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="movie-name">Movie name</label>
+       <input name="movie-name" id="moviename" required />
+        </div>
+        <div class="form-group">
+        <lable for"IMDb-link"><a href="https://m.imdb.com/" target="_blank">IMDb</a> link</lable>
+       
+        <input type="text" name="IMDb-link" id="IMDb" required/>
+        </div>
+        <div class="form-group" style="display: flex ;
+        align-items: center;
+        justify-content: center ;">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+      <a target="_blank" href="titurial.html">How to get IMDb link?</a>
+    </div>
+    <div id="status"></div>
+  </div>
+<script>
+  var form = document.getElementById("my-form");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      status.classList.add("done");
+      status.innerHTML = "Thanks for your submission!";
+      form.reset()
+    }).catch(error => {
+      status.classList.add("error");
+      status.innerHTML = "Oops! There was a problem. Please check your internet connection and try again!"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
+
 </body>
 <script src="Menu.js" type="text/javascript" charset="utf-8"></script>
 <script src="Movies.js" type="text/javascript" charset="utf-8"></script>
