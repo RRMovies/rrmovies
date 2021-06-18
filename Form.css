@@ -6,8 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
   margin: 0;
   background: transparent;
   font-size: 18px;
@@ -22,6 +22,9 @@
   flex-direction: column;
 }
 
+form{
+  width: auto;
+}
 
 .form-group {
   margin: 2vw 0;
@@ -35,8 +38,8 @@
   outline: none;
   border: solid 1px #adaf09;
   border-radius: 5vw;
-  height: 10vw;
-  padding: 1vw;
+  height: 26px;
+  padding: 5px;
 }
 
 .form-group input[type="submit"] {
