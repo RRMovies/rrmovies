@@ -26,16 +26,16 @@ if (window.innerHeight < window.innerWidth) {
 
 var audio = new Array;
 
-audio = ["Music1.mp3","Music2.mp3","Music3.mp3"
+audio = [".../Music1.mp3",".../Music2.mp3",".../Music3.mp3"
   ]
 
 //img
 
 var Img = new Array;
 
-Img = ["img1.jpg",
-        "img2.jpg",
-        "img3.jpg"];
+Img = [".../img1.jpg",
+        ".../img2.jpg",
+        ".../img3.jpg"];
 
 // functions()
 music.loop = false;
