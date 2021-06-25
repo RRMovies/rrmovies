@@ -1,22 +1,48 @@
-var form = document.getElementById("my-form");
+window.addEventListener("DOMContentLoaded", function() {
 
-async function handleSubmit(event) {
-  event.preventDefault();
+  // get the form elements defined in your form HTML above
+
+  var form = document.getElementById("test-form");
+  var button = document.getElementById("test-form-submit");
   var status = document.getElementById("status");
-  var data = new FormData(event.target);
-  fetch(event.target.action, {
-    method: form.method,
-    body: data,
-    headers: {
-      'Accept': 'application/json'
-    }
-  }).then(response => {
-    status.classList.add("done");
-    status.innerHTML = "Thanks for your submission!";
-    form.reset()
-  }).catch(error => {
-    status.classList.add("error");
-    status.innerHTML = "Oops! There was a problem. Please check your internet connection and try again!"
+
+  // Success and Error functions for after the form is submitted
+
+  function success() {
+    form.reset();
+    status.classList.add('done');
+    status.classList.remove("error");
+    status.innerHTML = "Thanks! for your submission";
+  }
+
+  function error() {
+    status.classList.remove("done");
+    status.classList.add('error');
+    status.innerHTML = "Oops! There was a problem.";
+  }
+
+  // handle the form submission event
+
+  form.addEventListener("submit", function(ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
   });
+});
+
+// helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
 }
-form.addEventListener("submit", handleSubmit)
