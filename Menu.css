@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,21 +11,26 @@
   font-family: 'hel', sans-serif;
   letter-spacing: 1px;
   scrollbar-width: 0;
+  transition: 0.5s;
 }
-*::-webkit-scrollbar{
+
+*::-webkit-scrollbar {
   display: none;
 }
-@font-face{
+
+@font-face {
   font-family: "hel";
   src: url("Lato.ttf");
   font-weight: 300;
 }
-a{
+
+a {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
 }
-.start{
+
+.start {
   color: #E0BD00;
   font-size: 30px;
   font-style: italic;
@@ -34,13 +39,15 @@ a{
   margin: 0;
   transition: 0.5s;
 }
-.start:hover{
+
+.start:hover {
   border-right: groove 3px #E0BD00;
   font-size: 40px;
   padding: 1.8vw;
   margin: 1.8vw;
   transition: 0.5s;
 }
+
 body {
   background: #222222 url("Bg.jpg");
   background-attachment: fixed;
@@ -48,19 +55,21 @@ body {
   background-blend-mode: overlay;
   color: #fff;
   background-size: contain;
- scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-header{
+
+header {
   position: absolute;
   display: block;
   height: 45px;
   width: 100%;
   background: url("HeaderBg.jpg") #222222;
   background-size: cover;
-  background-blend-mode : multiply;
+  background-blend-mode: multiply;
   z-index: -1;
 }
-.toggleBtn{
+
+.toggleBtn {
   position: fixed;
   font-size: 8vw;
   color: #fff;
@@ -69,12 +78,15 @@ header{
   padding: 0 10px;
   z-index: 10;
 }
-nav.active,nav.General{
+
+nav.active,
+nav.General {
   position: fixed;
   width: 100%;
   z-index: 1;
 }
-nav ul{
+
+nav ul {
   width: 100%;
   list-style: none;
   align-items: center;
@@ -82,12 +94,14 @@ nav ul{
   padding: 5px;
   overflow: hidden;
 }
-nav ul li{
+
+nav ul li {
   display: inline-flex;
   background: transparent;
   overflow: hidden;
 }
-nav ul li a{
+
+nav ul li a {
   text-decoration: none;
   display: flex;
   color: #fff;
@@ -95,27 +109,32 @@ nav ul li a{
   font-size: 20px;
   transition: 1s;
 }
-nav.active ul{
+
+nav.active ul {
   background: #fff;
   color: #000;
   font-size: 30px;
   transition: 1s;
 }
-nav.active ul li a{
-  color : #000;
+
+nav.active ul li a {
+  color: #000;
   padding: 10px;
   transition: 1s;
 }
-#hide{
+
+#hide {
   height: 0vh;
 }
-#show{
+
+#show {
   position: fixed;
   width: 100%;
   z-index: 1;
   transition: 1s;
 }
-#show ul{
+
+#show ul {
   height: 100vh;
   background: #fff;
   display: flex;
@@ -123,69 +142,108 @@ nav.active ul li a{
   flex-direction: column;
   transition: background 1s;
 }
-#show ul li{
+
+#show ul li {
   display: flex;
   justify-content: center;
 }
-#show ul li a{
+
+#show ul li a {
   color: #000;
   padding: 10px 50px;
   transition: 1s;
 }
-nav ul li:hover{
+
+nav ul li:hover {
   background-color: #E0BD00;
   transition: 0.3s;
 }
-#show ul li:hover{
+
+#show ul li:hover {
   border-radius: 5px;
   background-color: #E0BD00;
   transition: 0.3s;
 }
-header img{
+
+header img {
   height: 30px;
   width: auto;
   float: right;
   margin: 5px;
   border-radius: 5%;
 }
-#body{
+
+#body {
   position: relative;
   display: initial;
 }
-#menu{
+
+#menu {
   height: 40px;
   position: relative;
 }
+
 #contact {
-  max-width: 95vw;
+  width: 95vw;
   display: flex;
   flex-wrap: wrap;
-  margin: 2vw;
+  margin: 2.5vw;
   flex-direction: column;
+
 }
-.cntInfo{
+
+.cntInfo {
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
+  background: #fff;
   flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 5px;
+  transform: rotateX(-45deg) skew(30deg) translateY(0) translateX(0);
+  margin: 2vw;
+  box-shadow: -1px 1px 0 #a9a9a9,
+  -1.5px 1.5px 0 #a9a9a9,
+  -2px 2px 0 #a9a9a9,
+  -2.5px 2.5px 0 #a9a9a9,
+  -3px 3px 0 #a9a9a9,
+  -3.5px 3.5px 0 #a9a9a9,
+  -4px 4px 0 #a9a9a9;
 }
-@font-face{
+
+@font-face {
   font-family: "logo";
   src: url("Logos.ttf");
 }
-@font-face{
+
+@font-face {
   font-family: "lg";
   src: url("Social Logos Color.ttf");
 }
-.cntInfo .logoCt{
+
+.cntInfo a .logoCt {
   font-family: 'lg';
   font-size: 30px;
-  min-width: 70px;
+  color: #000;
 }
-.cntInfo a{
+
+.cntInfo a {
   font-weight: 300;
-  padding: 10px;
-  color: #00C6FF;
+  
 }
-a,iframe,img{
+
+.cntInfo:hover{
+  box-shadow: -2px 2px 0 #a9a9a9,
+  -4px 4px 0 #a9a9a9,
+  -6px 6px 0 #a9a9a9,
+  -8px 8px 0 #a9a9a9,
+  -10px 10px 0 #a9a9a9,
+  -12px 12px 0 #a9a9a9,
+  -14px 14px 0 #a9a9a9;
+  transform: rotateX(-45deg) skew(30deg) translateY(-10px) translateX(10px);
+}
+
+a,
+iframe,
+img {
   overflow: hidden;
 }
