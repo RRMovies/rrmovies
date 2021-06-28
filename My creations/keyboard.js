@@ -17,8 +17,8 @@ document.querySelectorAll(".enter")[2].addEventListener("click", function() {
 });
 
 function en(){
-  var remove = written.innerHTML.substring(0,written.innerHTML.length-1);
-    written.innerHTML = remove;
+  var remove = written.innerHTML.substring(0, written.innerHTML.length - 1);
+  written.innerHTML = remove;
 }
 
 var board = document.querySelectorAll(".board")[1];

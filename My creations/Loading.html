@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>load</title>
+</head>
+<body>
+  
+  <div id="loader">
+<span style="animation-delay: -0.1s">R</span>
+<span style="animation-delay: 0.2s">&</span>
+<span style="animation-delay: 0.5s">R</span>
+<span style="animation-delay: 0.8s"> </span>
+<span style="animation-delay: 1.1s">M</span>
+<span style="animation-delay: 1.4s">o</span>
+<span style="animation-delay: 1.7s">v</span>
+<span style="animation-delay: 2s">i</span>
+<span style="animation-delay: 2.3s">e</span>
+<span style="animation-delay: 2.6s">s</span>
+  </div>
+</body>
+<style type="text/css" media="all">
+*{
+  margin-top: 38%;
+}
+  #loader{
+    display: block;
+    position: absolute;
+  }
+  span{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    animation: loader 3s infinite ease-in-out -0.1s;
+  }
+  @keyframes loader {
+    0%,100%{
+      color:black;
+    }
+    55%{
+      color: transparent;
+    }
+  }
+</style>
+</html>

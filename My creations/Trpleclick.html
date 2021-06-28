@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<!--Created by Maruf Hasan (Bangladesh) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Triple Click</title>
+</head>
+<script>
+  window.onload = function(){
+ var tripleClickDiv = document.getElementById("tripleClick");
+   tripleClickDiv.onclick = function(){
+     tripleClickDiv.style.display = "none";
+     alert('You just clicked on the screen for 3 times');
+   }
+   window.ondblclick = aa;
+   function aa(){
+     tripleClickDiv.style.display = "block";
+     function ab(){
+     tripleClickDiv.style.display = "none";
+     }
+     setTimeout(ab,(1000/3));
+   }
+ }
+</script>
+<body>
+<div style="display:none; height: 100vh; width: 100vw; background: transparent;" id="tripleClick"></div>
+</body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</html>
