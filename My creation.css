@@ -1,0 +1,52 @@
+.content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  margin: 2vw;
+  align-items: space-around;
+}
+.content .container{
+  height: auto;
+  display: grid;
+  margin: 1vw;
+  background: #00C1FF;
+  border-radius: 1vw;
+  max-width: 250px;
+  border: outset #FFD800 0.5vw;
+}
+.content .container .imgBx{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.content .container .imgBx img{
+  height: 100%;
+  width: 100%;
+}
+.content .container .txtBx{
+  padding: 5px;
+  font-size: 12.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content .container .txtBx .Srccod{
+  background: #000;
+  padding: 3%;
+  border: 1px groove #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+.content .container .txtBx .Lvdm{
+  padding: 3%;
+  border: 1px groove #444;
+  border-radius: 5px;
+  background: #0f0;
+  color: #222;
+  text-align: center;
+}
+.content .container .txtBx .Srccod.unavailable,.content .container .txtBx .Lvdm.unavailable{
+  display: none;
+}
+.content .container .txtBx h3{
+  text-align: center;
+}
