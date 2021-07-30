@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Partical</title>
+</head>
+
+<body>
+  <h3 id="title">Partical</h3>
+<canvas id="canvas"></canvas>
+</body>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    background: #222;
+  }
+  canvas{
+    background: #559;
+  }
+  #title{
+    position: absolute;
+    font-size: 10vw;
+    color: #fff;
+    border-top: 0.5vw solid #fff;
+  }
+  #title::before{
+    content: 'With Javascript';
+    font-size: 2vw;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    left: 3px;
+    bottom: -1vw;
+    border-bottom: 0.5vw solid #fff;
+  }
+</style>
+<script src="partical.js"></script>
+</html>
