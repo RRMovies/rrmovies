@@ -80,9 +80,9 @@
 .content.movie {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  align-items: baseline;
+  align-items: center;
 }
-.content.movie .imgContainer{
+.content.movie .imgContainer,.content.movie .alinkimgContainer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +97,7 @@
 .content.movie h1{
   text-align: center;
 }
-.content.movie .imgContainer img{
+.content.movie .imgContainer img,.content.movie .alinkimgContainer img{
   padding: 0;
   height: 100%;
   width: 100%;

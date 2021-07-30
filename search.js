@@ -1,11 +1,8 @@
-const resultsWrap = document.getElementsByClassName("resultsWrap")[0];
-const srcbtn = document.getElementById("srcbtn");
-const searchBox = document.getElementsByClassName("searchBox")[0]
-
 var arr = new Array;
 var arr2 = new Array;
+
 for (var n = 0; n < imgcont.length; n++) {
-  const p = imgcont[n].querySelector("p");
+  var p = imgcont[n].querySelector("p");
   
   var ntb = p.textContent.split(" ").join("_");
   
@@ -44,7 +41,6 @@ srcbtn.addEventListener("click",function(){
   try{
   if(!resultsWrap.getElementsByTagName("ul")[0].children.length){
     google();
-    console.log("success");
   }
   }
   catch(error){
