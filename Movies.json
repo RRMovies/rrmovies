@@ -1,9 +1,100 @@
 {
-    "Ittefaq" : {
-      "name" : "Ittefaq",
-      "id" : "Ittefaq",
-      "year" : 2017,
-      "img" : "https://1.bp.blogspot.com/-456UDjBMpe4/YQNMN8HViII/AAAAAAAAAK0/z4EKUmXIA1sDCuqNYBis5jbz3JtW7IKYwCNcBGAsYHQ/s364/Ittefaq-%25282017-film%2529-Wikipedia-G-YM0IckKb-4rM.jpg",
-      "link": "https://youtu.be/CMkCZM_2uXc"
-    }
+  "Ittefaq": {
+    "name": "Ittefaq",
+    "id": "Ittefaq",
+    "year": 2017,
+    "img": "https://1.bp.blogspot.com/-456UDjBMpe4/YQNMN8HViII/AAAAAAAAAK0/z4EKUmXIA1sDCuqNYBis5jbz3JtW7IKYwCNcBGAsYHQ/s364/Ittefaq-%25282017-film%2529-Wikipedia-G-YM0IckKb-4rM.jpg",
+    "link": "https://youtu.be/CMkCZM_2uXc"
+  },
+  "Dhoom 3": {
+    "name": "Dhoom 3",
+    "id": "Dhoom_3",
+    "year": 2013,
+    "img": "https://i.pinimg.com/originals/cd/6c/98/cd6c984244410d3323fd9afa9129d9b1.jpg",
+    "link": "https://youtu.be/cvwiE8TR33g"
+  },
+  "Housefull 4": {
+    "name": "Housefull 4",
+    "id": "Housefull_4",
+    "year": 2019,
+    "img": "https://i.pinimg.com/originals/ef/21/c3/ef21c3acf5217cd1d2eae78e3d7df81e.jpg",
+    "link": "https://youtu.be/rwOK7CTf57g"
+  },
+  "Dream girl": {
+    "name": "Dream girl",
+    "id": "Dream_girl",
+    "year": 2019,
+    "img": "https://i.pinimg.com/originals/f1/f8/9b/f1f89b35e130a4a316b74df5672e0f6c.jpg",
+    "link": "https://youtu.be/FtOj1QQPJV8"
+  },
+  "Total Dhamaal": {
+    "name": "Total Dhamaal",
+    "id": "Total_Dhamaal",
+    "year": 2019,
+    "img": "https://i.pinimg.com/originals/bd/14/1f/bd141f3d67710a3e668a80461679e329.jpg",
+    "link": "https://youtu.be/m2L3h8KUy9c"
+  },
+  "Password": {
+    "name": "Password",
+    "id": "Password",
+    "year": 2019,
+    "img": "https://m.media-amazon.com/images/M/MV5BMzI0NmVhMjYtYzNhYS00MTcwLTgyY2UtNDAwOTY0NDI4Y2EzXkEyXkFqcGdeQXVyMjQwODkxNzg@._V1_SY264_CR0,0,178,264_AL_.jpg",
+    "link": "https://youtu.be/WaUz_ZJ5QPU"
+  },
+  "Bornoporichoy": {
+    "name": "Bornoporichoy",
+    "id": "Bornoporichoy",
+    "year": 2019,
+    "img": "https://i.pinimg.com/originals/91/a7/c8/91a7c8f69f523db57f5f14316b67c6b6.jpg",
+    "link": "https://youtu.be/qfQrBNEkqwY"
+  },
+  "Kabir Shing": {
+    "name": "Kabir Shing",
+    "id": "Kabir_Shing",
+    "year": 2019,
+    "img": "https://wallpapercave.com/wp/wp4548432.jpg",
+    "link": "https://youtu.be/DAOrMPfXEgY"
+  },
+  "War": {
+    "name": "War",
+    "id": "War",
+    "year": 2019,
+    "img": "https://i.pinimg.com/originals/da/26/e0/da26e04324c629f235d849c3e502d33a.jpg",
+    "link": "https://youtu.be/-jjO2TthxhQ"
+  },
+  "Pati Patni Aur Woh": {
+    "name": "Pati Patni Aur Woh",
+    "id": "Pati_Patni_Aur_Woh",
+    "year": 2019,
+    "img": "https://i.pinimg.com/originals/61/20/52/612052cb7d6000c8bfdd668abac81e46.jpg",
+    "link": "https://youtu.be/NjNq_bsTr9w"
+  },
+  "Mission Mangal": {
+    "name": "Mission Mangal",
+    "id": "Mission_Mangal",
+    "year": 2019,
+    "img": "https://i.pinimg.com/originals/f4/e7/d8/f4e7d8dae16f5ac5d890828249089511.jpg",
+    "link": "https://youtu.be/cO5SSTZdRSQ"
+  },
+  "Dabangg 3": {
+    "name": "Dabangg 3",
+    "id": "Dabangg_3",
+    "year": 2019,
+    "img": "https://1.bp.blogspot.com/-C_-b1ZHrPUk/YEIfOBOIZWI/AAAAAAAAAHY/D4gvQNgQkxs8lvcIddvpTAcDgfqGjIkcACNcBGAsYHQ/s315/Dabangg-3-%25282019%2529-Kannada-in-HD-Einthusan-Full-movies-download-CWlaeSsNVfAs7M.gif",
+    "link": "https://youtu.be/5klTbLpL0oY"
+  },
+  "Jawani Janeman": {
+    "name": "Jawani Janeman",
+    "id": "Jawani_Janeman",
+    "year": 2020,
+    "img": "https://m.media-amazon.com/images/M/MV5BNjY1OTI0NjEtNzRmZS00NzFlLTlhMTgtNjdmNWY2MDQ3YzIwXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SY264_CR2,0,178,264_AL_.jpg",
+    "link": "https://youtu.be/YpUUUy6RFC8"
+  },
+  "Malang": {
+    "name": "Malang",
+    "id": "Malang",
+    "year": 2020,
+    "img": "https://m.media-amazon.com/images/M/MV5BMDJiMDQyYTItZTA0NC00NmVlLTg3NGItMjQwOWI2ZjY0MmE5XkEyXkFqcGdeQXVyOTAzMTc2MjA@._V1_SY264_CR10,0,178,264_AL_.jpg",
+    "link":"https://youtu.be/uUylH4HrQr4="
+  }
 }

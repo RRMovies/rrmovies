@@ -5,7 +5,13 @@ window.addEventListener("DOMContentLoaded", function() {
   var form = document.getElementById("test-form");
   var button = document.getElementById("test-form-submit");
   var status = document.getElementById("status");
-
+let IMDb = document.getElementById("IMDb");
+/*window.addEventListener("dblclick", function() {
+  console.log(IMDb.value.search("https://www.imdb.com/"));
+})
+if (IMDb.value.search("https://www.imdb.com/") == -1) {
+  error();
+}*/
   // Success and Error functions for after the form is submitted
 
   function success() {
@@ -38,7 +44,7 @@ function ajax(method, url, data, success, error) {
   xhr.setRequestHeader("Accept", "application/json");
   xhr.onreadystatechange = function() {
     if (xhr.readyState !== XMLHttpRequest.DONE) return;
-    if (xhr.status === 200) {
+    if (xhr.status === 200 && IMDb.value.search("https://www.imdb.com/") != -1) {
       success(xhr.response, xhr.responseType);
     } else {
       error(xhr.status, xhr.response, xhr.responseType);

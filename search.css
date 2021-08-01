@@ -26,9 +26,9 @@
   font-size: 15px;
 }
 .searchBox.show .resultsWrap{
- 
-  width: calc(80vw + 4px);
+  width: 80vw;
   display: flex;
+  margin: 2px;
   align-items: center;
   justify-content: left;
   background: #eee;
