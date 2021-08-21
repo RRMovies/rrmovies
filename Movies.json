@@ -235,6 +235,62 @@
     "id": "Happy_New_Year",
     "year": 2014,
     "img": "https://1.bp.blogspot.com/-QYDPE9rYvdg/X8Yb82jvAMI/AAAAAAAAADA/CjNPOYM5-4k6jf2N0x-NfIOe6TEOZwYLgCPcBGAYYCw/s1819/image_search_1606818699020.jpg",
-    "link":"https://youtu.be/MTEjDKD6N4A"
+    "link": "https://youtu.be/MTEjDKD6N4A"
+  },
+  "Gunday": {
+    "name": "Gunday",
+    "id": "Gunday",
+    "year": 2014,
+    "img": "https://i.pinimg.com/originals/23/11/2f/23112f1a2ab9b08a2f890320c58697b9.jpg",
+    "link": "https://youtu.be/A8t89OxppFc"
+  },
+  "Bhootnath_Returns": {
+    "name": "Bhootnath Returns",
+    "id": "Bhootnath_Returns",
+    "year": 2014,
+    "img": "https://i.pinimg.com/originals/91/02/ce/9102ce596716e9a5dcf732d7bf958473.jpg",
+    "link": "https://youtu.be/d62T9W6Ekpc"
+  },
+  "Badhaai_Ho": {
+    "name": "Badhaai Ho",
+    "id": "Badhaai_Ho",
+    "year": 2018,
+    "img": "https://1.bp.blogspot.com/-LQYyeezo2DA/YO1XsyL6iBI/AAAAAAAAAKc/3GAZ1IuuIBo0JJDh6vurUSNAs-_A-baYgCPcBGAYYCw/s384/Badhaai-Ho-Wikipedia-zzhhHlLEPKDBQM.jpg",
+    "link": "https://youtu.be/tI7LuTl9RzY"
+  },
+  "Simmba": {
+    "name": "Simmba",
+    "id": "Simmba",
+    "year": 2018,
+    "img": "https://1.bp.blogspot.com/-ic_bOL-U4BI/YMhFRTI_2oI/AAAAAAAAAJc/Hs-LClDQCo48pc_xZq5AeaeAY0fV6m4CwCNcBGAsYHQ/s320/Simmba-Amazonin-Ranveer-Singh-Ajay-Devgn-Sara-Ali-Khan-Rohit-GV7TZlL1rPI1PM.jpg",
+    "link": "https://youtu.be/tulRAdZ_zp0"
+  },
+  "Bagghi_2": {
+    "name": "Bagghi 2",
+    "id": "Bagghi_2",
+    "year": 2018,
+    "img": "https://1sdmoviespoint.pro/wp-content/uploads/2017/03/Baaghi-2-2018-Full-Movie-Free-Download-CAMRIP.jpg",
+    "link": "https://youtu.be/zAoMuvIBCwE"
+  },
+  "Hichki": {
+    "name": "Hichki",
+    "id": "Hichki",
+    "year": 2018,
+    "img": "https://1.bp.blogspot.com/-9-lV9H7DvGg/YALk8oQkFfI/AAAAAAAAAGM/Apo0i55q6dk0fjFJe4vETmcxUSBc81O8QCNcBGAsYHQ/s301/220px-Hichki_-_.jpg",
+    "link": "https://youtu.be/bMZZi8acOqE"
+  },
+  "Sonu_Ke_Titu_Ki_Sweety": {
+    "name": "Sonu Ke Titu Ki Sweety",
+    "id": "Sonu_Ke_Titu_Ki_Sweety",
+    "year": 2018,
+    "img": "https://i.pinimg.com/originals/b1/d7/ce/b1d7ceb5df5608b03e02fc4450570251.jpg",
+    "link": "https://youtu.be/cUiaKQWg404"
+  },
+  "Race_3": {
+    "name": "Race 3",
+    "id": "Race_3",
+    "year": 2018,
+    "img": "https://i.pinimg.com/originals/e3/24/18/e32418876456d8fa03025a7ead96e4aa.jpg",
+    "link": "https://youtu.be/MGXnT33255s"
   }
 }
