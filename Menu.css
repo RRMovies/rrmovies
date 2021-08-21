@@ -192,24 +192,6 @@ header img {
 
 }
 
-.cntInfo {
-  display: flex;
-  justify-content: space-around;
-  background: #fff;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  padding: 5px;
-  transform: rotateX(-45deg) skew(30deg) translateY(0) translateX(0);
-  margin: 2vw;
-  box-shadow: -1px 1px 0 #a9a9a9,
-  -1.5px 1.5px 0 #a9a9a9,
-  -2px 2px 0 #a9a9a9,
-  -2.5px 2.5px 0 #a9a9a9,
-  -3px 3px 0 #a9a9a9,
-  -3.5px 3.5px 0 #a9a9a9,
-  -4px 4px 0 #a9a9a9;
-}
-
 @font-face {
   font-family: "logo";
   src: url("Logos.ttf");
@@ -220,30 +202,66 @@ header img {
   src: url("Social Logos Color.ttf");
 }
 
-.cntInfo a .logoCt {
-  font-family: 'lg';
-  font-size: 30px;
+.cnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.cnt .title {
+  width: 100%;
+  text-align: center;
+}
+
+.cntMain {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 20vw;
+}
+
+.cntInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 50%;
+  border: solid #fff 0.8vw;
+  box-shadow: inset 1px 1px 3px #000a, 2.5px 2.5px 5px #fff7,
+    -2.5px 2.5px 5px #fff7, 2.5px -2.5px 5px #fff7, -2.5px -2.5px 5px #fff7;
+  transform: scale(1);
+  background: #fff;
+}
+
+.cntInfo:hover {
+  box-shadow: inset 1px 1px 3px #000a, 4px 4px 10px #fff9,
+    -4px 4px 10px #fff9, 4px -4px 10px #fff9, -4px -4px 10px #fff9;
+  transform: scale(1.1);
+}
+
+.cnt .cntInfo a .LogoCt {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   color: #000;
-}
-
-.cntInfo a {
-  font-weight: 300;
-  
-}
-
-.cntInfo:hover{
-  box-shadow: -2px 2px 0 #a9a9a9,
-  -4px 4px 0 #a9a9a9,
-  -6px 6px 0 #a9a9a9,
-  -8px 8px 0 #a9a9a9,
-  -10px 10px 0 #a9a9a9,
-  -12px 12px 0 #a9a9a9,
-  -14px 14px 0 #a9a9a9;
-  transform: rotateX(-45deg) skew(30deg) translateY(-10px) translateX(10px);
+  font-size: 9vw;
+  font-family: 'lg';
 }
 
 a,
 iframe,
 img {
   overflow: hidden;
+}
+
+.comment {
+  display: flex;
+  
 }
